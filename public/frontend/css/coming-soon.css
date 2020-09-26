@@ -1,0 +1,71 @@
+.commin-soon{
+	margin-top: 165px;
+}
+.Constraction-header{
+    height: 50px;
+    border-bottom: 3px solid #1300c0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.Constraction-header h3{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #0f2f44;
+}
+.darkcolor {
+	color: #002e5b;
+}
+section, .image, .image img {
+	position: relative;
+}
+.image {
+	overflow: hidden;
+}
+.headonecolor {
+	color: #d50000;
+}
+.font-light {
+	font-weight: 300;
+}
+ul.count_down {
+	list-style: none;
+	margin: 0 0 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+ul.count_down.animated-gradient li {
+	padding: 0 50px;
+	width: auto;
+}
+ul.count_down li {
+	display: inline-block;
+	color: #232323;
+	padding: 0 35px;
+	width: auto;
+}
+ul.count_down li p:nth-child(1) {
+	font-size: 70px;
+	font-weight: bold;
+	line-height: normal;
+	margin: 0 0 0 0;
+	transition: 1s;
+}
+ul.count_down li p:nth-child(2) {
+	color: #232323;
+	font-size: 14px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10px 0 0 0;
+	transition: 1s;
+	font-weight: 500;
+}
+.count_down.animated-gradient p {
+	color: #1300c0;
+}
+ul.social-icons-simple li, ul.social-icons li {
+	display: inline-block;
+}
+

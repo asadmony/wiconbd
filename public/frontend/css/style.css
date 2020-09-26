@@ -1,0 +1,1425 @@
+/* ===================================
+                About
+   =================================== */
+
+
+/*
+    Theme Name: Wicon Electronics
+    Theme URI:
+    Author: Dark_barry
+    Author URI:
+    Description: One Page , Multi Parallax Template
+    Tags: one page, multi page, multipurpose, parallax, creative, html5
+
+ */
+
+
+/* ===================================
+          Table of Contents
+   =================================== */
+
+
+/*
+01 body
+02 Page Header
+03 NavBar Part
+05 Banner Part
+06 Led Block Part
+07 Product Banner
+08 Fan Block Part
+09 Mini-banner
+10 Freeze Block
+11 video-Content
+12 Footer
+13 Product Page CSS
+14 Contact Us Page CSS
+15 404 Erro
+
+/*Table Of Contents ends */
+
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
+/*   ============================
+                         Header Part Start
+                     ============================    */
+
+
+/* Header Part Start */
+
+#header-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    /* background: #d50000; */
+}
+
+.header-color {
+    background: transparent;
+}
+
+.header {
+    height: 40px;
+}
+
+.header .social {
+    margin-top: 5px;
+}
+
+.header .social ul li {
+    display: inline-block;
+}
+
+.header .social ul li i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+}
+
+.header .login {
+    text-align: right;
+    margin-right: 90px;
+}
+
+.login ul li {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.login ul li i {
+    color: #000;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.login ul li span {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*   ============================
+                         Nav-bar Part Start
+                     ============================    */
+
+.navbar {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.nav-color {
+    background: #ded4ff;
+    height: 70px;
+}
+
+.mynav {
+    margin-left: 100px;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 15px !important;
+    margin-left: 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    background: #d50000;
+    color: #fff;
+}
+
+.dropdown-item {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 15px !important;
+    background-color: #ded4ff;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    background-color: #d50000;
+}
+
+.fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+}
+
+.fixed .nav-color {
+    background: transparent;
+}
+
+
+/*   ============================
+                            Banner Part start
+                     ============================    */
+
+#banner-part {
+    position: relative;
+    height: 900px;
+    width: 100%;
+}
+
+.banner-1 {
+    background: url(../images/bannerimg-2.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.banner-2 {
+    background: url(../images/bannerimg-2.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.banner-3 {
+    background: url(../images/bannerimg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.banner-4 {
+    background: url(../images/bannerimg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.bnrtxt {
+    margin-top: 265px;
+    color: white;
+}
+
+.bnrtxt h2 {
+    font-weight: 400;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.bnrtxt h1 {
+    font-size: 60px;
+    margin-top: -10px;
+}
+
+.bnrtxt p {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.bnrtxt a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background: #af6363;
+    transition: .6s;
+}
+
+.bnrtxt a:hover {
+    background: #295686;
+}
+
+.bnrimg {
+    margin-top: 265px;
+}
+
+.bnrimg img {
+    width: 100%;
+}
+
+.banner-slider ul.slick-dots {
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-slider ul.slick-dots li {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.banner-slider ul.slick-dots li.slick-active button {
+    background: #d50000;
+}
+
+.banner-slider ul.slick-dots li button {
+    font-size: 0px;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #d50000;
+    border-radius: 5px;
+}
+
+
+/*   ==============================
+                         Led-block Part start
+                     ==============================    */
+
+#led-block {
+    height: 800px;
+    background: rgba(222, 212, 255, 0.604);
+    position: relative;
+}
+
+.led-img {
+    height: 100%;
+    margin-top: 230px;
+}
+
+.led-img img {
+    width: 100%;
+}
+
+.led-text {
+    height: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.led-text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: #d50000;
+}
+
+.led-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #1300c0;
+    letter-spacing: 5px;
+}
+
+.led-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    width: 500px;
+    padding-bottom: 60px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.led-text .more-btn {
+    padding: 10px 20px;
+    border: 2px solid #1300c0;
+    color: #0f2f44;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all linear .5s;
+}
+
+.more-btn:hover {
+    background: #d50000;
+    border: 2px solid #d50000;
+    color: #ffffff;
+}
+
+
+/* =================================
+        Product Banner Part Start
+    ================================= */
+
+#product-banner-part {
+    height: 600px;
+    /* margin: 50px 0; */
+}
+
+.product-banner {
+    width: 100%;
+    height: 600px;
+}
+
+.product-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-banner-slider ul.slick-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-banner-slider ul.slick-dots li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-banner-slider ul.slick-dots li.slick-active button {
+    background: #d50000;
+}
+
+.product-banner-slider ul.slick-dots li button {
+    font-size: 0px;
+    width: 30px;
+    height: 5px;
+    background: transparent;
+    border: 1px solid #d50000;
+    border-radius: 0;
+}
+
+
+/*   ==============================
+         Fan Block Part start
+     ==============================    */
+
+#fan-block {
+    height: 700px;
+    /* margin-top: 50px; */
+    background: rgba(222, 212, 255, 0.602);
+}
+
+.fan-img {
+    height: 100%;
+    margin-top: 230px;
+}
+
+.fan-img img {
+    width: 100%;
+}
+
+.fan-text {
+    height: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.fan-text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #d50000;
+}
+
+.fan-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #1300c0;
+    letter-spacing: 5px;
+}
+
+.fan-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    width: 500px;
+    padding-bottom: 60px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.fan-text .more-btn {
+    padding: 10px 20px;
+    border: 2px solid #1300c0;
+    color: #0f2f44;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all linear .5s;
+}
+
+.fan-text .more-btn:hover {
+    background: #d50000;
+    border: 2px solid #d50000;
+    color: #ffffff;
+}
+
+
+/*   ==================================
+        Special Product Part Start
+    =================================    */
+
+#spcl-product-part {
+    margin: 50px 0;
+    height: 420px;
+}
+
+#spcl-product-part .special-product {
+    height: 100%;
+    background: rgba(222, 212, 255, 0.602);
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.product-img {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-details {
+    border-left: 1px solid #000;
+    height: 300px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.product-details h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #1300c0;
+}
+
+.product-details h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #d50000;
+    letter-spacing: 5px;
+}
+
+.product-details p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    width: 220px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+
+/*   ==============================
+                         Freeze Block Part start
+                     ==============================    */
+
+#freeze-block {
+    height: 650px;
+    background: rgba(222, 212, 255, 0.602);
+}
+
+.freeze-img {
+    height: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.freeze-img-2 {
+    display: none;
+}
+
+.freeze-img-3 {
+    display: none;
+}
+
+.freeze-text {
+    height: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.freeze-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: #d50000;
+}
+
+.freeze-text h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #1300c0;
+    letter-spacing: 5px;
+}
+
+.freeze-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    width: 420px;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-left: 85px;
+}
+
+.freeze-text .more-btn {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border: 2px solid #1300c0;
+    color: #0f2f44;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all linear .5s;
+}
+
+.freeze-text .more-btn:hover {
+    background: #d50000;
+    border: 2px solid #d50000;
+    color: #ffffff;
+}
+
+.freeze-text ul.colors-freze {
+    margin-top: 40px;
+}
+
+.freeze-text li {
+    display: inline-block;
+    padding-left: 3px;
+}
+
+
+/*   ==============================
+         Video-content Part Start
+    ==============================    */
+
+#video-content {
+    margin: 20px 0;
+    height: 100%;
+}
+
+.video-box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#youtubevideo {
+    width: 100%;
+    height: 600px;
+}
+
+
+/*   ==============================
+        Footer Part Start
+     ==============================    */
+
+.footer {
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer .foter-des {
+    padding-top: 95px;
+    height: 100%;
+}
+
+.footer .foter-des .text {
+    padding: 30px 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f_logo ul li {
+    display: inline-block;
+}
+
+
+/*.footer .foter-des .f_logo ul li i {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 50%;
+	line-height: 30px;
+	color: #1300c0;
+	border: 1px solid #1300c0;
+	margin-right: 10px;
+	transition: .6s;
+}
+.footer .foter-des .f_logo ul li i:hover{
+    background: #d00000;
+    border: 1px solid #d00000;
+    color: #fff;
+} */
+
+.footer .contact {
+    padding-top: 95px;
+    margin-left: 10px;
+}
+
+.footer .contact h2 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.footer .contact ul {
+    margin-top: 30px;
+    display: flex;
+    color: #0f2f44;
+}
+
+.footer .contact ul li p {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.footer .contact ul li i {
+    font-size: 24px;
+    color: #d00000;
+}
+
+.footer .links {
+    padding-top: 95px;
+    margin-left: 20px;
+}
+
+.footer .links h2 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.footer .links ul {
+    margin-top: 30px;
+}
+
+.footer .links ul li {
+    margin-bottom: 20px;
+}
+
+.footer .links ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #0f2f44;
+    transition: .5s;
+}
+
+.footer .links ul li a:hover {
+    padding-left: 25px;
+}
+
+.footer .myaccount {
+    padding-top: 95px;
+    margin-left: 25px;
+}
+
+.footer .myaccount h2 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+
+.footer .myaccount ul li {
+    margin-bottom: 10px;
+}
+
+.footer .myaccount ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #0f2f44;
+}
+
+.footer .payment-type {
+    text-align: center;
+}
+
+.footer .payment-type .accept {
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #0f2f44;
+}
+
+.footer .payment-type li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+
+/*   ==============================
+                        Footer-bottom Part Start
+                     ==============================    */
+
+#footer-bottom {
+    height: 50px;
+    background: #d50000;
+    text-align: center;
+}
+
+.copyright {
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.copyright span {
+    color: #1300c0;
+}
+
+.btop {
+    display: none;
+    padding: 15px;
+    background: #d50000;
+    color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+
+/* ============================ Product page CSS ============================ */
+
+
+/*   ============================
+        Products Part start
+     ============================    */
+
+#products-part {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.products-header {
+    text-align: center;
+    margin: 30px 0;
+    border-bottom: 3px solid #1300c0;
+}
+
+.products-header h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #0f2f44;
+}
+
+#products-part .prdct-img-1 {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+#products-part .prdct-img-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.prduct-banner ul.slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prduct-banner ul.slick-dots li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.prduct-banner ul.slick-dots li.slick-active button {
+    background: #d50000;
+}
+
+.prduct-banner ul.slick-dots li button {
+    font-size: 0px;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid #d50000;
+    border-radius: 10px;
+}
+
+.products-name-header {
+    width: 240px;
+    border-bottom: 3px solid #d00000;
+    margin-bottom: 20px;
+}
+
+.products-name-header h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.products-prduct .product-1 {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    margin: 20px 10px;
+    transition: all linear .4s;
+    position: relative;
+    height: 400px;
+}
+
+.products-prduct .product-1:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+.products-prduct .product-1 img {
+    width: 90%;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.products-prduct .product-1 h4 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #0f2f44;
+    text-align: center;
+    border-top: 1px solid #0f2f44;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.products-prduct .product-1 p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #0f2f44;
+    text-align: center;
+    margin-bottom: 0px;
+    width: 65%;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.products-prduct .product-1 .prdct-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all linear .4s;
+}
+
+.products-prduct .product-1 .prdct-icon i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #1300c0;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 5px;
+    display: none;
+    background: #1300c0;
+    color: #fff;
+}
+
+.products-prduct .product-1 .prdct-icon i:hover {
+    background: #d00000;
+    border: 1px solid #d00000;
+}
+
+.products-prduct .product-1:hover .prdct-icon i {
+    display: inline-block;
+}
+
+.prdt-txt {
+    margin-top: 35px;
+}
+
+.prev {
+    font-size: 15px;
+    position: absolute;
+    bottom: -22px;
+    left: 45%;
+}
+
+.next {
+    font-size: 15px;
+    position: absolute;
+    bottom: -22px;
+    right: 45%;
+}
+
+.products-prduct ul {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.products-prduct ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.products-prduct ul li button {
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    line-height: 14px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #d00000;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* =====================Contact Us CSS Start============================ */
+
+
+/* =================================
+                    Contact US part Start
+            =================================  */
+
+#contact-us {
+    margin: 50px 0;
+}
+
+.header-text {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #0f2f44;
+    border-bottom: 3px solid #1300c0;
+}
+
+.header-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #0f2f44;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    width: 680px;
+    margin-left: 250px;
+}
+
+.contacts {
+    margin-top: 70px;
+}
+
+.getin_form .form-control {
+    border: 1px solid #ececec;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 41px;
+    color: #999999;
+    font-size: 0.875rem;
+}
+
+textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+.contact_btn {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    padding: .8rem 2.25rem;
+    line-height: 1;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    z-index: 1;
+    border: 1px solid transparent;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.contact_btn:hover {
+    border-color: #1300c0;
+    background: transparent;
+    color: #1300c0;
+}
+
+.contact_btn,
+.contact_btn:active {
+    background: #d50000;
+    color: #fff;
+    outline: none;
+    border-color: #d50000;
+}
+
+.contact-meta {
+    margin-left: 20px;
+}
+
+.heading-title span.compny-name {
+    color: #d50000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.heading-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #0f2f44;
+    margin-bottom: 18px;
+}
+
+.contact-meta p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    color: #0f2f44;
+}
+
+.contact-meta .social-icons {
+    margin-top: 30px;
+}
+
+.contact-meta .social-icons li {
+    display: inline-block;
+}
+
+ul.social-icons li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 1px;
+    text-align: center;
+    display: block;
+    color: #0f2f44;
+    position: relative;
+    transition: 0.3s all;
+    z-index: 1;
+}
+
+ul.social-icons li a::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    top: -1px;
+    opacity: 0;
+    visibility: hidden;
+    background: #d50000;
+    border-radius: inherit;
+    z-index: -1;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+    transition: 0.3s all;
+}
+
+.facebook::before {
+    background-color: #4267B2 !important;
+}
+
+.twitter::before {
+    background-color: #1DA1F2 !important;
+}
+
+.linkedin::before {
+    background-color: #0077B5 !important;
+}
+
+.insta::before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+}
+
+.whatsapp::before {
+    background-color: #169500 !important;
+}
+
+ul.social-icons li a:hover {
+    color: #fff;
+}
+
+ul.social-icons li a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.service-header {
+    margin-top: 50px;
+    text-align: center;
+    border-bottom: 3px solid #d00000;
+}
+
+.showroom {
+    margin-top: 30px;
+    padding: 50px 30px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.showroom-area h5 {
+    margin-bottom: 2px;
+    color: #5f5f5f;
+}
+
+.showroom-name {
+    padding-bottom: 10px;
+}
+
+.showroom-name h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #d00000;
+    letter-spacing: 2px;
+}
+
+.showroom-address p {
+    font-family: 'Open Sans', sans-serif;
+    color: #0f2f44;
+    font-size: 14px;
+}
+
+.showroom-address .phone {
+    margin-top: 10px;
+}
+
+
+/* ===================== Product Details CSS Start ============================ */
+
+
+/*  =================================
+                    Product Details part Start
+                =================================  */
+
+.product-details-part {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.product-details-header {
+    height: 50px;
+    border-bottom: 3px solid #1300c0;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.product-details-header h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #0f2f44;
+}
+
+#syncCarousel .owl-stage {
+    pointer-events: auto;
+}
+
+.carousel-shop-detail,
+#carousel-gallery-detail {
+    overflow: hidden;
+}
+
+.carousel-shop-detail-inner .item {
+    margin-top: 2px;
+    opacity: 0.5;
+    border: 2px solid transparent;
+    transition: all 0.4s linear;
+}
+
+.owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.carousel-shop-detail-inner .synced .item {
+    opacity: 1;
+}
+
+.starcolor i {
+    color: #fde428;
+}
+
+.text-grey {
+    color: #a5a5a5;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.prdct-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.7;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.font-light {
+    color: #6d6d6d;
+}
+
+.share-on-it ul li {
+    display: inline-block;
+}
+
+.image img {
+    width: 100%;
+}
+
+.image {
+    padding: 15px 10px 20px 10px;
+}
+
+.shop-content {
+    padding-bottom: 10px;
+}
+
+.shop-content a {
+    color: #0f2f44;
+}
+
+.shopping-box {
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    transition: .5s;
+    margin: 15px 0;
+}
+
+.shopping-box:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ===================== Cominng-soon CSS Start ============================ */
+
+
+/*  =================================
+                    Cominng-soon part Start
+                =================================  */
+
+
+/* ===================== About US CSS Start ============================ */
+
+
+/*  =================================
+        About us part Start
+    =================================  */
+
+#aboutus-part {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.aboutus-header {
+    height: 50px;
+    border-bottom: 3px solid #1300c0;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.aboutus-header h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 600; */
+    color: #0f2f44;
+}
+
+.prfile-header {
+    width: 240px;
+    border-bottom: 3px solid #d00000;
+    margin-bottom: 20px;
+}
+
+.prfile-header h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cmpnyprofile p {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 14px; */
+    padding: 5px 0;
+}
+
+.cmpnyprofile {
+    padding-bottom: 10px;
+}
