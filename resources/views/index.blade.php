@@ -2,100 +2,55 @@
 
 @section('content')
     <!--  =================================
-                Banner Part start
+                Slider Part start
          ==================================  -->
+    @if ($sliders)
+
     <section id="banner-part">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 ">
                 <div class="banner-slider">
-                    <div class="banner-1">
+                    @php
+                        $bglo = 1;
+                    @endphp
+                    @foreach ($sliders as $slider)
+                    @php
+                        if ($bglo < 5) {
+                            $bglo++;
+                        }else {
+                            $bglo = 1;
+                        }
+                    @endphp
+                    <div class="banner-{{ $bglo }}">
                         <div class="overlay">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="bnrtxt">
                                             <h2>ওয়াইকন</h2>
-                                            <h1>স্মাৰ্ট এলইডি টিভি </h1>
-                                            <p>এক টিভিতেই সব </p>
-                                            <a href="#">See Our Product</a>
+                                            <h1>{{ $slider->title }} </h1>
+                                            <p>{{ $slider->details }} </p>
+                                            @if ($slider->button)
+                                            <a href="{{ $slider->buttonlink }}">{{ $slider->buttonname }}</a>
+                                            @endif
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <div class="bnrimg">
-                                            <img src="images/WPDK5A-1.png" alt="WPDK5A-1">
+                                            <img src="{{ asset($slider->image) }}" alt="WPDK5A-1">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="banner-2">
-                        <div class="overlay">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="bnrtxt">
-                                            <h2>ওয়াইকন</h2>
-                                            <h1>স্মাৰ্ট এলইডি টিভি </h1>
-                                            <p>এক টিভিতেই সব </p>
-                                            <a href="#">See Our Product</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="bnrimg">
-                                            <img src="images/WPDN9A-1.png" alt="WPDK5A-1">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner-3">
-                        <div class="overlay">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="bnrtxt">
-                                            <h2>ওয়াইকন</h2>
-                                            <h1>স্মাৰ্ট এলইডি টিভি </h1>
-                                            <p>এক টিভিতেই সব </p>
-                                            <a href="#">See Our Product</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="bnrimg">
-                                            <img src="images/WPDN2-1.png" alt="WPDK5A-1">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner-4">
-                        <div class="overlay">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="bnrtxt">
-                                            <h2>ওয়াইকন</h2>
-                                            <h1>স্মাৰ্ট এলইডি টিভি </h1>
-                                            <p>এক টিভিতেই সব </p>
-                                            <a href="#">See Our Product</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="bnrimg">
-                                            <img src="images/WPDK5A-1.png" alt="WPDK5A-1">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
     </section>
+    @endif
     <!--  =================================
                 Led-block Part start
           ==================================  -->
@@ -104,7 +59,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="led-img">
-                        <img src="images/WP-(Primium)2.png" alt="WP-(Primium)2" data-parallax='{"z": 150, "from scroll": 45, "duration": 50}'>
+                        <img src="{{ asset('frontend/images/WP-(Primium)2.png') }}" alt="WP-(Primium)2" data-parallax='{"z": 150, "from scroll": 45, "duration": 50}'>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -113,7 +68,7 @@
                         <h3>PREMIUM LED</h3>
                         <p class="prct-dtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem quisquam beatae unde esse neque iste consectetur necessitatibus iure, magnam quod est nobis inventore ipsum corporis ut labore culpa quis?
                         </p>
-                        <a href="product.html" class="more-btn">More Product</a>
+                        <a href="{{ route('products') }}" class="more-btn">More Product</a>
                     </div>
                 </div>
             </div>
@@ -124,28 +79,18 @@
          ================================ -->
     <section id="product-banner-part">
         <div class="container">
+            @if ($banners)
+
             <div class="row product-banner-slider">
+                @foreach ($banners as $banner)
                 <div class="col-lg-12 col-md-12 col-sm-12 p-0">
                     <div class="product-banner">
-                        <img src="images/555.jpg" alt="666">
+                            <img src="{{ asset($banner->image) }}" />
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 p-0">
-                    <div class="product-banner">
-                        <img src="images/555.jpg" alt="666">
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 p-0">
-                    <div class="product-banner">
-                        <img src="images/555.jpg" alt="666">
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 p-0">
-                    <div class="product-banner">
-                        <img src="images/555.jpg" alt="666">
-                    </div>
-                </div>
+                @endforeach
             </div>
+            @endif
         </div>
     </section>
 
@@ -163,12 +108,12 @@
                         <p class="prct-dtl">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem quisquam beatae unde esse neque iste consectetur necessitatibus iure, magnam quod est nobis inventore ipsum corporis ut labore culpa quis?
                         </p>
-                        <a href="product.html" class="more-btn">More Product</a>
+                        <a href="{{ route('products') }}" class="more-btn">More Product</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <div class="fan-img">
-                        <img src="images/Premium Fan.png" alt="WP-(Primium)2" data-parallax='{"z": 180, "duration":10}'>
+                        <img src="{{ asset('frontend/images/Premium Fan.png') }}" alt="WP-(Primium)2" data-parallax='{"z": 180, "duration":10}'>
                     </div>
                 </div>
             </div>
@@ -187,8 +132,8 @@
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png">
-                                        <img src="images/wicon-rechargeable-pink-large_Side.png" alt="wicon-rechargeable-pink-large_Side">
+                                    <a class="venobox" data-gall="gallery01" href="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}">
+                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
                                     </a>
                                 </div>
                             </div>
@@ -210,8 +155,8 @@
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png">
-                                        <img src="images/wicon-rechargeable-pink-large_Side.png" alt="wicon-rechargeable-pink-large_Side">
+                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png') }}">
+                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
                                     </a>
                                 </div>
                             </div>
@@ -233,8 +178,8 @@
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png">
-                                        <img src="images/wicon-rechargeable-pink-large_Side.png" alt="wicon-rechargeable-pink-large_Side">
+                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png') }}">
+                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
                                     </a>
                                 </div>
                             </div>
@@ -256,8 +201,8 @@
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png">
-                                        <img src="images/wicon-rechargeable-pink-large_Side.png" alt="wicon-rechargeable-pink-large_Side">
+                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png') }}">
+                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
                                     </a>
                                 </div>
                             </div>
@@ -286,13 +231,13 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
                     <div class="freeze-img">
-                        <img src="images/freeze.png" alt="freeze">
+                        <img src="{{ asset('frontend/images/freeze.png') }}" alt="freeze">
                     </div>
                     <div class="freeze-img-2">
-                        <img src="images/freeze.png" alt="freeze">
+                        <img src="{{ asset('frontend/images/freeze.png') }}" alt="freeze">
                     </div>
                     <div class="freeze-img-3">
-                        <img src="images/freeze.png" alt="freeze">
+                        <img src="{{ asset('frontend/images/freeze.png') }}" alt="freeze">
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -304,21 +249,21 @@
                         <ul class="colors-freze">
                             <li>
                                 <a class="freeze-color" href="#">
-                                    <img src="images/freeze-color-1.png" alt="freeze-color-1">
+                                    <img src="{{ asset('frontend/images/freeze-color-1.png') }}" alt="freeze-color-1">
                                 </a>
                             </li>
                             <li>
                                 <a class="freeze-color" href="#">
-                                    <img src="images/freeze-color-2.png" alt="freeze-color-2">
+                                    <img src="{{ asset('frontend/images/freeze-color-2.png') }}" alt="freeze-color-2">
                                 </a>
                             </li>
                             <li>
                                 <a class="freeze-color" href="#">
-                                    <img src="images/freeze-color-1.png" alt="freeze-color-1">
+                                    <img src="{{ asset('frontend/images/freeze-color-1.png') }}" alt="freeze-color-1">
                                 </a>
                             </li>
                         </ul>
-                        <a href="product.html" class="more-btn">More Product</a>
+                        <a href="{{ route('products') }}" class="more-btn">More Product</a>
                     </div>
                 </div>
             </div>

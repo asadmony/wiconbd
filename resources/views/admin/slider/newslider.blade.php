@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group pb-4">
                         <label for="buttonlink">Button Link</label>
-                        <input class="form-control " type="text" id="buttonlink" name="buttonlink" placeholder="example.com/element" >
+                        <input class="form-control " type="text" id="buttonlink" name="buttonlink" placeholder="http://example.com/element" >
                     </div>
                     <div class="form-group pb-4">
                         <label class="" for="image">Slider Image</label>

@@ -34,21 +34,19 @@
             <!-- Navbar-->
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i> {{ auth('admin')->user()->name }} </a>
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i> {{ Auth::user()->name }} </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        @admin('super')
-                        <a class="dropdown-item" href="{{ route('admin.home') }}">As Admin Manager</a>
-                        @endadmin
-                        <a class="dropdown-item" href="{{ route('admin.password.change') }}">Change Password</a>
+                        <a class="dropdown-item" href="">Change Password</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/admin/logout" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-                                <form id="logout-form" action="{{ route('admin.logout') }}" method="POST"
-                                    style="display: none;">
-                                    @csrf
-                                </form>
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
                     </div>
                 </li>
             </ul>
@@ -98,6 +96,15 @@
                             <a class="nav-link " href="{{ route('admin.newslider') }}" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Add Slider
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Banners</div>
+                            <a class="nav-link " href="{{ route('admin.banners') }}" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Banner List
+                            </a>
+                            <a class="nav-link " href="{{ route('admin.newbanner') }}" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Add Banner
                             </a>
                             <div class="sb-sidenav-menu-heading">Auto Code Generator</div>
                             <a class="nav-link " href="{{ route('admin.autocodes') }}" >

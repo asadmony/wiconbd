@@ -903,10 +903,11 @@ p {
 .products-prduct .product-1 {
     background: #fff;
     border: 1px solid #e5e5e5;
-    margin: 20px 10px;
+    margin: 10px 10px;
     transition: all linear .4s;
     position: relative;
     height: 400px;
+    text-align: center;
 }
 
 .products-prduct .product-1:hover {
@@ -916,9 +917,11 @@ p {
 }
 
 .products-prduct .product-1 img {
-    width: 90%;
+    width: auto;
+    max-height: 220px;
     padding-top: 25px;
     padding-left: 20px;
+
 }
 
 .products-prduct .product-1 h4 {

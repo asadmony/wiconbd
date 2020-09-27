@@ -16,12 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/venobox.min.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/venobox.min.css') }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ asset('frontend/css/bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/jquery.fancybox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/responsive.css') }}">
+</head>
 </head>
 
 <body>
@@ -66,8 +71,8 @@
           ==================================  -->
     <nav class="navbar navbar-expand-lg fixmenu">
         <div class="container nav-color">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/cropped-Wicon-Logo.png" alt="cropped-Wicon-Logo">
+            <a class="navbar-brand" href="/">
+                <img src="{{ asset('frontend/images/cropped-Wicon-Logo.png') }}" alt="cropped-Wicon-Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -76,28 +81,28 @@
             <div class="collapse navbar-collapse mynav" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="{{ route('products') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Products
                     </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="product.html">Television</a>
-                            <a class="dropdown-item" href="#">Fan</a>
-                            <a class="dropdown-item" href="#">Refrigerator</a>
-                            <a class="dropdown-item" href="#">All Products</a>
+                            <a class="dropdown-item" href="{{ route('products') }}">Television</a>
+                            <a class="dropdown-item" href="{{ route('products') }}">Fan</a>
+                            <a class="dropdown-item" href="{{ route('products') }}">Refrigerator</a>
+                            <a class="dropdown-item" href="{{ route('products') }}">All Products</a>
                         </div>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Our Services</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About us</a>
+                        <a class="nav-link" href="{{ route('aboutUs') }}">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact us</a>
+                        <a class="nav-link" href="{{ route('contact') }}">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -216,17 +221,20 @@
                       Footer-bottom Part End
                ==================================  -->
 
-          <script src="js/jquery-1.12.4.min.js"></script>
-          <script src="js/popper.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/slick.min.js"></script>
-          <script src="js/mixitup.min.js"></script>
-          <script type="text/javascript" src="js/venobox.min.js"></script>
-          <script src="js/jquery.parallax-scroll.js"></script>
-          <script src="js/jquery.easing.min.js"></script>
-          <script src="js/script.js"></script>
+          <script src="{{ asset('frontend/js/jquery-1.12.4.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/popper.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/slick.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/mixitup.min.js') }}"></script>
+          <script type="text/javascript" src="{{ asset('frontend/js/venobox.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/jquery.parallax-scroll.js') }}"></script>
+          <script src="{{ asset('frontend/js/jquery.easing.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/jquery.fancybox.min.js') }}"></script>
+          <script src="{{ asset('frontend/js/script.js') }}"></script>
 
-          <script src="" async defer></script>
+
+          {{-- <script src="{{ asset('js/app.js') }}" async defer></script> --}}
       </body>
 
       </html>
