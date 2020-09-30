@@ -36,10 +36,11 @@ class HomeController extends Controller
         $data = [
             'name' => $request->name,
             'email' => $request->email,
+            'mobile' => $request->mobile,
             'message' => $request->message,
         ];
         ContactMessage::create($data);
-        return redirect()->back()->with('sucess', 'Your message is submitted!');
+        return redirect()->back()->with('success', 'Your message is submitted!');
     }
     public function aboutUs()
     {

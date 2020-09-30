@@ -106,6 +106,11 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Add Banner
                             </a>
+                            <div class="sb-sidenav-menu-heading">Messages</div>
+                            <a class="nav-link " href="{{ route('admin.messages') }}" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                All Messages
+                            </a>
                             <div class="sb-sidenav-menu-heading">Auto Code Generator</div>
                             <a class="nav-link " href="{{ route('admin.autocodes') }}" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
