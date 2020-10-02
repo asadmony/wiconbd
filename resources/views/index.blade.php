@@ -128,103 +128,34 @@
         <div class="container">
             <div class="row spcl-prdct-slider">
                 @php
-                    $latest = \App\Product::latest(4)->get();
+                    $latest = App\Product::latest()->take(8)->get();
                 @endphp
                 @foreach ($latest as $item)
-
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="special-product">
+                        <div class="row">
+                            <div class="col-lg-5 justify-content-middle">
+                                <div class="product-img">
+                                    <a class="venobox" data-gall="gallery01" href="{{ asset($item->images[0]->image) }}">
+                                        <img src="{{ asset($item->images[0]->image) }}" alt="wicon-rechargeable-pink-large_Side">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="product-details">
+                                    <a href="#">
+                                        <h2 class="pdct-typ">WICON</h2>
+                                    </a>
+                                    <h4>{{ Str::limit($item->productname, 40) }}</h4>
+                                    <p class="prct-dtl">
+                                        {{ Str::limit($item->description, 100) }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 @endforeach
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="special-product">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}">
-                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="product-details">
-                                    <a href="#">
-                                        <h2 class="pdct-typ">WICON</h2>
-                                    </a>
-                                    <h4>Rechargeable Fan</h4>
-                                    <p class="prct-dtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. magnam quod est nobis inventore ipsum corporis ut labore culpa quis?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="special-product">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png') }}">
-                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="product-details">
-                                    <a href="#">
-                                        <h2 class="pdct-typ">WICON</h2>
-                                    </a>
-                                    <h4>Rechargeable Fan</h4>
-                                    <p class="prct-dtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. magnam quod est nobis inventore ipsum corporis ut labore culpa quis?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="special-product">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png') }}">
-                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="product-details">
-                                    <a href="#">
-                                        <h2 class="pdct-typ">WICON</h2>
-                                    </a>
-                                    <h4>Rechargeable Fan</h4>
-                                    <p class="prct-dtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. magnam quod est nobis inventore ipsum corporis ut labore culpa quis?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="special-product">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="product-img">
-                                    <a class="venobox" data-gall="gallery01" href="images/wicon-rechargeable-pink-large_Side.png') }}">
-                                        <img src="{{ asset('frontend/images/wicon-rechargeable-pink-large_Side.png') }}" alt="wicon-rechargeable-pink-large_Side">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="product-details">
-                                    <a href="#">
-                                        <h2 class="pdct-typ">WICON</h2>
-                                    </a>
-                                    <h4>Rechargeable Fan</h4>
-                                    <p class="prct-dtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. magnam quod est nobis inventore ipsum corporis ut labore culpa quis?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

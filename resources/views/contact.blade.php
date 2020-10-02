@@ -17,14 +17,14 @@
                     <div class="contacts">
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12">
-                                <x-alert />
+                                <x-alert></x-alert>
                                 <div class="heading-title">
                                     <form class="getin_form" method="post" action="{{ route('contactmsg') }}">
                                         @csrf
                                         <div class="row px-2">
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <input class="form-control" id="name1" type="text" placeholder="Name:" required="" name="name">
+                                                    <input class="form-control" id="name1" type="text" placeholder="Name:" required name="name">
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
@@ -34,11 +34,16 @@
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <textarea class="form-control" id="message1" placeholder="Message:" required="" name="message"></textarea>
+                                                    <input class="form-control" type="text" id="email1" required placeholder="Mobile: +88 015XXXXXXXX" name="mobile">
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
-                                                <button type="button" id="submit_btn1" class="contact_btn">Send</button>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" id="message1" placeholder="Message:" required name="message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <button type="submit" id="submit_btn1" class="contact_btn">Send</button>
                                             </div>
                                         </div>
                                     </form>

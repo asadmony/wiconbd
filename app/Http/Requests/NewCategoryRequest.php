@@ -25,7 +25,7 @@ class NewCategoryRequest extends FormRequest
     {
         return [
             'catname' => 'required|unique:App\Category,catname|max:255',
-            'catlogo' => 'required|image|max:150',
+            'catlogo' => 'required|image|max:512',
         ];
     }
     public function messages()
@@ -36,7 +36,7 @@ class NewCategoryRequest extends FormRequest
             'catname.max' => 'Category Name can not be more than 225 characters.',
             'catlogo.required' => 'Category Logo is required',
             'catlogo.image' => 'Category Logo should be an image file',
-            'catlogo.image' => 'Category Logo should be of 150KB maximum',
+            'catlogo.image' => 'Category Logo should be of 512KB maximum',
         ];
     }
 }

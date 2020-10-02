@@ -25,7 +25,7 @@ class UpdateBrandRequest extends FormRequest
     {
         return [
             'brandname' => 'required|unique:App\Brand,brandname|max:255',
-            'brandlogo' => 'image|max:150',
+            'brandlogo' => 'image|max:512',
         ];
     }
     public function messages()
@@ -35,7 +35,7 @@ class UpdateBrandRequest extends FormRequest
             'brandname.unique' => 'This Brand is already created',
             'brandname.max' => 'Brand Name can not be more than 225 characters.',
             'brandlogo.image' => 'Brand Logo should be an image file',
-            'brandlogo.image' => 'Brand Logo should be of 150KB maximum',
+            'brandlogo.image' => 'Brand Logo should be of 512KB maximum',
         ];
     }
 }

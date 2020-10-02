@@ -24,7 +24,7 @@ class ProductImageRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'required|image',
+            'image' => 'required|image|max:512',
         ];
     }
     public function messages()
@@ -32,6 +32,7 @@ class ProductImageRequest extends FormRequest
         return [
             'image.required' => 'An image should be selected',
             'image.image' => 'Selected file should be an image',
+            'image.max' => 'Product image should be of 512KB maximum',
         ];
     }
 }

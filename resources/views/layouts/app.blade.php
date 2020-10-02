@@ -89,9 +89,12 @@
                         Products
                     </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('products') }}">Television</a>
-                            <a class="dropdown-item" href="{{ route('products') }}">Fan</a>
-                            <a class="dropdown-item" href="{{ route('products') }}">Refrigerator</a>
+                            @php
+                                $cats = App\Category::all();
+                            @endphp
+                            @foreach ($cats as $cat)
+                                <a class="dropdown-item" href="{{ route('category.products', $cat->catname) }}">{{ $cat->catname }}</a>
+                            @endforeach
                             <a class="dropdown-item" href="{{ route('products') }}">All Products</a>
                         </div>
                     </li>

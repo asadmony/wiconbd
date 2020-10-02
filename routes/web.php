@@ -19,6 +19,7 @@ Route::get('/product/{product}', 'HomeController@product')->name('product');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::post('/contact', 'HomeController@contactmsg')->name('contactmsg');
 Route::get('/about-us', 'HomeController@aboutUs')->name('aboutUs');
+Route::get('/category/{cat}', 'HomeController@productsByCategory')->name('category.products');
 
 Auth::routes();
 
@@ -79,3 +80,6 @@ Route::post('/admin/newbanner', 'BannerController@add')->name('admin.newbanner')
 Route::get('/admin/banner/{banner}/edit', 'BannerController@edit')->name('admin.editbanner');
 Route::put('/admin/banner/{banner}/edit', 'BannerController@update')->name('admin.updatebanner');
 Route::delete('/admin/banner/{banner}/delete', 'BannerController@delete')->name('admin.deletebanner');
+// message routes for admin
+Route::get('/admin/messages', 'MessageController@index')->name('admin.messages');
+Route::delete('/admin/messages/{msg}/delete', 'MessageController@delete')->name('admin.deletemsg');

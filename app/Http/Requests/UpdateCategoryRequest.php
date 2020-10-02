@@ -25,7 +25,7 @@ class UpdateCategoryRequest extends FormRequest
     {
         return [
             'catname' => 'required|unique:App\Category,catname|max:255',
-            'catlogo' => 'image|max:150',
+            'catlogo' => 'image|max:512',
         ];
     }
     public function messages()
@@ -35,7 +35,7 @@ class UpdateCategoryRequest extends FormRequest
             'catname.unique' => 'This category is already created',
             'catname.max' => 'Category Name can not be more than 225 characters.',
             'catlogo.image' => 'Category Logo should be an image file',
-            'catlogo.image' => 'Category Logo should be of 150KB maximum',
+            'catlogo.image' => 'Category Logo should be of 512KB maximum',
         ];
     }
 }

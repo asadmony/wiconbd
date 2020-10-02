@@ -22,6 +22,12 @@ class HomeController extends Controller
         $banners = $banner->latest()->get();
         return view('products', compact('products', 'banners'));
     }
+    public function productsByCategory($cat, Product $product, Banner $banner)
+    {
+        $products = $product->where('category', $cat)->latest()->paginate(24);
+        $banners = $banner->latest()->get();
+        return view('products', compact('products', 'banners'));
+    }
     public function product(Product $product)
     {
         $relproducts = Product::where('category', $product->category)->latest()->limit(4)->get();
@@ -36,10 +42,11 @@ class HomeController extends Controller
         $data = [
             'name' => $request->name,
             'email' => $request->email,
+            'mobile' => $request->mobile,
             'message' => $request->message,
         ];
         ContactMessage::create($data);
-        return redirect()->back()->with('sucess', 'Your message is submitted!');
+        return redirect()->back()->with('success', 'Your message is submitted!');
     }
     public function aboutUs()
     {
