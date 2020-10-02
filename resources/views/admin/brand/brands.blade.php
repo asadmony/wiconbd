@@ -39,7 +39,7 @@
                                     <div class="p-2">
                                         <a class="btn btn-primary" href="{{ route('admin.editbrand',$brand->id) }}"> <i class="fa fa-edit"></i> Edit</a>
                                     </div>
-                                    <div class="p-2">
+                                    {{-- <div class="p-2">
                                         <a class="btn btn-danger " href="" onclick="event.preventDefault();
                                         if(confirm('Are you sure to delete?')){
                                             document.getElementById('form-delete-{{ $brand->id }}')
@@ -49,7 +49,7 @@
                                             @csrf
                                             @method('delete')
                                         </form>
-                                    </div>
+                                    </div> --}}
                                 </td>
                             </tr>
                             @endforeach

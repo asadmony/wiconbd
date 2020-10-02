@@ -18,6 +18,7 @@
                         <tr>
                             <th>Name</th>
                             <th>Email</th>
+                            <th>Phone</th>
                             <th>Message</th>
                             <th>Option</th>
                         </tr>
@@ -26,6 +27,7 @@
                         <tr>
                             <th>Name</th>
                             <th>Email</th>
+                            <th>Phone</th>
                             <th>Message</th>
                             <th>Option</th>
                         </tr>
@@ -35,6 +37,7 @@
                         <tr>
                             <td class="text-center">{{ $message->name }}</td>
                             <td>{{ $message->email }}</td>
+                            <td><a href="tel:{{ $message->phone }}">{{ $message->phone }}</a></td>
                             <td>{{ $message->message }}</td>
                             <td>
                                 <div class="p-2">
