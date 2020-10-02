@@ -57,7 +57,7 @@
                     <div class="col-lg-8 col-md-6 col-sm-12">
                         <div class="login">
                             <ul>
-                                <li><a class="offphn" href="#" target="_self"><i class="fas fa-phone-square"></i><span>+880 967877677</span></a></li>
+                                <li><a class="offphn" href="tel:+880967877677" target="_self"><i class="fas fa-phone-square"></i><span>+880 967877677</span></a></li>
                                 <!--                                <li><a class="signup" href="#" target="_self"><i class="far fa-user"></i><span>Sign up</span></a></li>-->
                             </ul>
                         </div>
@@ -72,7 +72,7 @@
     <nav class="navbar navbar-expand-lg fixmenu">
         <div class="container nav-color">
             <a class="navbar-brand" href="/">
-                <img src="{{ asset('frontend/images/cropped-Wicon-Logo.png') }}" alt="cropped-Wicon-Logo">
+                <img src="{{ asset('frontend/images/wicon-primum.png') }}" alt="cropped-Wicon-Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>

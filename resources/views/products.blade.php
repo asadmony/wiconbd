@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="input-group mb-3">
+                    {{-- <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Sort By</span>
                         </div>
@@ -48,7 +48,7 @@
                                 <option value="model">Model (A - Z)</option>
                                 <option value="model">Model (Z - A)</option>
                             </select>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-lg-12 col-sm-12">
                     <div class="products-prduct">
@@ -56,16 +56,16 @@
                             @if ($products)
                                 @foreach ($products as $product)
                                     <div class="col-lg-4 col-md-6 col-sm-12 p-0">
-                                        <div class="product-1" href="#">
+                                        <div class="product-1" >
                                             <img src="{{ asset($product->images[0]->image) }}" alt="{{ $product->productname }}">
                                             <div class="prdct-icon">
-                                                <a href="#"><i class="far fa-heart"></i></a>
-                                                <a href="{{ route('product', $product->id) }}">
+                                                <a href="{{ route('product', [$product->id, Str::slug($product->productname)]) }}"><i class="far fa-heart"></i></a>
+                                                <a href="{{ route('product', [$product->id, Str::slug($product->productname)]) }}">
                                                     <i class="far fa-eye"></i>
                                                 </a>
                                             </div>
                                             <div class="prdt-txt">
-                                                <a href="#">
+                                                <a href="{{ route('product', [$product->id, Str::slug($product->productname)]) }}">
                                                     <h4>{{ Str::limit($product->productname, 37) }}</h4>
                                                 </a>
                                                 <p> {{ Str::limit($product->description, 60) }}</p>

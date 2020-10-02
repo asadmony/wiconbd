@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('index');
 Route::get('/products', 'HomeController@products')->name('products');
-Route::get('/product/{product}', 'HomeController@product')->name('product');
+Route::get('/product/{product}-{slug}', 'HomeController@product')->name('product');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::post('/contact', 'HomeController@contactmsg')->name('contactmsg');
 Route::get('/about-us', 'HomeController@aboutUs')->name('aboutUs');

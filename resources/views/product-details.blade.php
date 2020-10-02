@@ -146,13 +146,13 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="shopping-box">
                         <div class="image sale text-center">
-                            <a href="{{ route('product', $product->id) }}">
+                            <a href="{{ route('product', [$product->id, Str::slug($product->productname)]) }}">
                                 <img style="width: auto; max-height: 160px" src="{{ asset($product->images[0]->image) }}" alt="shop">
                             </a>
 
                         </div>
                         <div class="shop-content text-center">
-                            <h5 class="darkcolor pb-2"><a href="{{ route('product', $product->id) }}">{{ Str::limit($product->productname, 20) }}</a></h5>
+                            <h5 class="darkcolor pb-2"><a href="{{ route('product', [$product->id, Str::slug($product->productname)]) }}">{{ Str::limit($product->productname, 20) }}</a></h5>
                             <p>Price: &#2547 {{ $product->price }}</p>
                         </div>
                     </div>

@@ -28,7 +28,7 @@ class HomeController extends Controller
         $banners = $banner->latest()->get();
         return view('products', compact('products', 'banners'));
     }
-    public function product(Product $product)
+    public function product(Product $product, $slug)
     {
         $relproducts = Product::where('category', $product->category)->latest()->limit(4)->get();
         return view('product-details', compact('product', 'relproducts'));
