@@ -36,7 +36,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i> {{ Auth::user()->name }} </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="">Change Password</a>
+                        <a class="dropdown-item" href="{{ route('changepassword') }}">Change Password</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
@@ -61,62 +61,62 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <div class="sb-sidenav-menu-heading">Products</div>
+                            <div class="sb-sidenav-menu-heading"><i class="fab fa-product-hunt"></i>  Products</div>
                             <a class="nav-link " href="{{ route('admin.products') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fab fa-product-hunt"></i></div>
                                 Product List
                             </a>
                             <a class="nav-link " href="{{ route('admin.newproduct') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
                                 Add Product
                             </a>
-                            <div class="sb-sidenav-menu-heading">Categories</div>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-layer-group"></i> Categories</div>
                             <a class="nav-link " href="{{ route('admin.categories') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-layer-group"></i></div>
                                 Category List
                             </a>
                             <a class="nav-link " href="{{ route('admin.newcategory') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
                                 Add Category
                             </a>
-                            <div class="sb-sidenav-menu-heading">Brands</div>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-clipboard-check"></i> Brands</div>
                             <a class="nav-link " href="{{ route('admin.brands') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-clipboard-check"></i></div>
                                 Brand List
                             </a>
                             <a class="nav-link " href="{{ route('admin.newbrand') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
                                 Add Brand
                             </a>
-                            <div class="sb-sidenav-menu-heading">Sliders</div>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-laptop-code"></i> Sliders</div>
                             <a class="nav-link " href="{{ route('admin.sliders') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-laptop-code"></i></div>
                                 Slider List
                             </a>
                             <a class="nav-link " href="{{ route('admin.newslider') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
                                 Add Slider
                             </a>
-                            <div class="sb-sidenav-menu-heading">Banners</div>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-image"></i> Banners</div>
                             <a class="nav-link " href="{{ route('admin.banners') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-image"></i></div>
                                 Banner List
                             </a>
                             <a class="nav-link " href="{{ route('admin.newbanner') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
                                 Add Banner
                             </a>
-                            <div class="sb-sidenav-menu-heading">Messages</div>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-envelope-open-text"></i> Messages</div>
                             <a class="nav-link " href="{{ route('admin.messages') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-envelope-open-text"></i></div>
                                 All Messages
                             </a>
-                            <div class="sb-sidenav-menu-heading">Auto Code Generator</div>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-terminal"></i> Auto Code Generator</div>
                             <a class="nav-link " href="{{ route('admin.autocodes') }}" >
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-terminal"></i></div>
                                 Auto Codes
                             </a>
-                            <div class="sb-sidenav-menu-heading">others</div>
+                            {{-- <div class="sb-sidenav-menu-heading">others</div>
                             <a class="nav-link" href="charts.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Charts
@@ -124,7 +124,7 @@
                             <a class="nav-link" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">

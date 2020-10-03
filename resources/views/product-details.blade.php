@@ -123,7 +123,7 @@
                     <div class="share-on-it">
                         <ul class="social-icons social-icons-simple darkcolor mt-2">
                             <li><span class="pr-2">Share: </span></li>
-                            <li><a class="facebook" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="facebook" href="https://www.facebook.com/wicon.world/" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a class="twitter" href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                             <li><a class="insta" href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                             <li><a class="whatsapp" href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>

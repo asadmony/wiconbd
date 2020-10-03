@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,8 +24,10 @@ Route::get('/category/{cat}', 'HomeController@productsByCategory')->name('catego
 
 Auth::routes();
 
-Route::get('/home', 'AdminController@index')->name('home');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/home', 'AdminController@index')->name('home');
 
+});
 // Admin Routes
 Route::get('/admin/dashboard', 'AdminController@index')->name('admin.dashboard');
 // product routes for admin
@@ -83,3 +86,5 @@ Route::delete('/admin/banner/{banner}/delete', 'BannerController@delete')->name(
 // message routes for admin
 Route::get('/admin/messages', 'MessageController@index')->name('admin.messages');
 Route::delete('/admin/messages/{msg}/delete', 'MessageController@delete')->name('admin.deletemsg');
+// change password for admin
+Route::get('/admin/changepassword', 'AdminController@changepassword')->name('changepassword');

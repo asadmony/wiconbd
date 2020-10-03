@@ -25,4 +25,8 @@ class AdminController extends Controller
     {
         return view('home');
     }
+    public function changepassword()
+    {
+        return view('admin.changepassword');
+    }
 }

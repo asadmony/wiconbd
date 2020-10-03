@@ -47,7 +47,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="social">
                             <ul class="social-icons social-icons-simple ">
-                                <li><a class="facebook" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="facebook" href="https://www.facebook.com/wicon.world/" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a class="twitter" href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                 <li><a class="insta" href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                                 <li><a class="whatsapp" href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
@@ -93,7 +93,7 @@
                                 $cats = App\Category::all();
                             @endphp
                             @foreach ($cats as $cat)
-                                <a class="dropdown-item" href="{{ route('category.products', $cat->catname) }}">{{ $cat->catname }}</a>
+                                <a class="dropdown-item" href="{{ route('category.products', Str::slug($cat->catname) ) }}">{{ $cat->catname }}</a>
                             @endforeach
                             <a class="dropdown-item" href="{{ route('products') }}">All Products</a>
                         </div>
