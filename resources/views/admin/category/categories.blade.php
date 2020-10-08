@@ -32,7 +32,7 @@
                             @foreach ($cats as $cat)
                             <tr>
                                 <td class="text-center">
-                                    <img class="img rounded" src="{{ asset($cat->catlogo) }}" alt="{{ $cat->catname }}" style="max-width: 160px">
+                                    <img class="img rounded" src="{{ asset($cat->catlogo) }}" alt="{{ $cat->catname }}" style="max-width: 160px; max-height: 160px">
                                 </td>
                                 <td>{{ $cat->catname }}</td>
                                 <td>

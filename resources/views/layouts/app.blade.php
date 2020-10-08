@@ -9,8 +9,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" >
     <title>WICON - Update your technology</title>
-    <meta name="description" content="">
+    <meta name="description" content="Wicon Electronics world is one of the newest Electronic companies in Bangladesh. We have started our journey in 2009. Now we are looking up and we g=have already started our big journey. ">
+    <meta name="keywords" content="wicon, wicon brand, wicon led, smart led, smart TV, android TV, wicon 32 led tv,price in bangladesh,wicon led tv 32 inch price,wicon led tv 24 inch price,wicon tv review,wicon tv showroom in bangladesh,wicon smart led tv,wicon 4k tv,wicon led tv 32 inch price in bangladesh,wicon 32 led tv price in bangladesh,wicon led tv 32 inch price,wicon led tv 24 inch price,wicon tv review,wicon tv showroom in bangladesh,wicon smart led tv,wicon 4k tv,wicon led tv 32 inch price in bangladesh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">

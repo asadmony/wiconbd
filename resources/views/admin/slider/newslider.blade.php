@@ -23,6 +23,14 @@
                         <label for="details">Slider Details</label>
                         <textarea class="form-control " type="text" id="details" name="details" placeholder="" ></textarea>
                     </div>
+                    <div class="form-group pb-4">
+                        <label for="details">Select Slider background style</label>
+                        <select class="form-control" name="style" id="style">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="5">3</option>
+                        </select>
+                    </div>
                     <div class="form-group form-inline pb-4">
                         <input class="form-control" type="checkbox" id="button" name="button" value="1" >
                         <label style="padding-left: 10px" for="button">Slider Button (check if you want to add a button)</label>

@@ -32,7 +32,7 @@
                             @foreach ($brands as $brand)
                             <tr>
                                 <td class="text-center">
-                                    <img class="img rounded" src="{{ asset($brand->brandlogo) }}" alt="{{ $brand->brandname }}" style="max-width: 160px">
+                                    <img class="img rounded" src="{{ asset($brand->brandlogo) }}" alt="{{ $brand->brandname }}" style="max-width: 160px; max-height: 160px">
                                 </td>
                                 <td>{{ $brand->brandname }}</td>
                                 <td>

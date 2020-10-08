@@ -20,6 +20,7 @@ class CreateContactMessagesTable extends Migration
             $table->string('mobile', 255)->nullable();
             $table->text('message')->nullable();
             $table->timestamps();
+            $table->collation = 'utf8_general_ci';
         });
     }
 

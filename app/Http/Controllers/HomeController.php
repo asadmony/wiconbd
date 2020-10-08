@@ -7,6 +7,7 @@ use App\ContactMessage;
 use App\Slider;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
 {

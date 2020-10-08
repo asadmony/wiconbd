@@ -18,6 +18,7 @@ class CreateBrandsTable extends Migration
             $table->string('brandname', 255)->unique();
             $table->string('brandlogo', 255)->nullable();
             $table->timestamps();
+            $table->collation = 'utf8_general_ci';
         });
     }
 

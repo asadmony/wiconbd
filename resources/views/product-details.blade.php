@@ -106,7 +106,7 @@
                         <span class="text-grey"><span class="font-bold">4.4 </span>(21)</span>
                     </a>
                     </span>
-                    <p class="prdct-text">{{ $product->description }}</p>
+                    <p class="prdct-text">{{ nl2br($product->description) }}</p>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <ul class="prdct-dtil" style="list-style: disc;">

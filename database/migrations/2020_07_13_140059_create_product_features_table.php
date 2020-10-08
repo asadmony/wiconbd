@@ -19,6 +19,7 @@ class CreateProductFeaturesTable extends Migration
             $table->string('featurename', 255);
             $table->string('featurevalue', 255);
             $table->timestamps();
+            $table->collation = 'utf8_general_ci';
             $table->foreign('product_id')
                 ->references('id')->on('products');
         });

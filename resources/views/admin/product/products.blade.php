@@ -23,9 +23,9 @@
                                 <th>Category</th>
                                 <th>Brand</th>
                                 <th width="8%">Price</th>
-                                <th width="3%">Discount%</th>
+                                {{-- <th width="3%">Discount%</th>
                                 <th width="3%">Discount Price</th>
-                                <th width="3%">Quantity</th>
+                                <th width="3%">Quantity</th> --}}
                                 <th width="3%">Option</th>
                             </tr>
                         </thead>
@@ -38,9 +38,9 @@
                                 <th>Category</th>
                                 <th>Brand</th>
                                 <th>Price</th>
-                                <th>Discount%</th>
+                                {{-- <th>Discount%</th>
                                 <th>Discount Price</th>
-                                <th>Quantity</th>
+                                <th>Quantity</th> --}}
                                 <th>Option</th>
                             </tr>
                         </tfoot>
@@ -79,7 +79,7 @@
                                 <td>{{ $product->category }}</td>
                                 <td>{{ $product->brand }}</td>
                                 <td> &#2547 {{ $product->price }}</td>
-                                <td class="text-center">
+                                {{-- <td class="text-center">
                                     <div class=""> {{ $product->discount }}%</div>
                                     <div class="py-2">
                                         <a class="btn btn-info btn-sm" href="#" data-target="#discount" onClick="makediscount('{{ $product->id }}',{{ $product->price }},'{{ $product->productcode }}');" data-toggle="modal"> <i class="pe-7s-cash"></i> Set</a>
@@ -97,16 +97,16 @@
                                     @endif
                                 </td>
                                 <td> &#2547 {{ $product->discountprice }}</td>
-                                <td>{{ $product->quantity }}</td>
+                                <td>{{ $product->quantity }}</td> --}}
                                 <td>
                                     <div class=" text-center p-2">
                                         <a class="btn btn-info btn-sm" href="{{ route('admin.productimages',$product->id) }}"> <i class="pe-7s-photo"></i> Images</a>
                                     </div>
                                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog fa-fw"></i> options </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                                        <product-available available="{{ $product->available }}" product="{{ $product->id }}"></product-available>
+                                        {{-- <product-available available="{{ $product->available }}" product="{{ $product->id }}"></product-available>
                                         <product-visibility visibility="{{ $product->visibility }}" product="{{ $product->id }}"></product-visibility>
-                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-divider"></div> --}}
                                         <a class="dropdown-item" href="{{ route('admin.editproduct',$product->id) }}"><i class="fa fa-edit"></i> Edit</a>
                                         <a class="dropdown-item" href="" onclick="event.preventDefault();
                                         if(confirm('Are you sure to delete?')){

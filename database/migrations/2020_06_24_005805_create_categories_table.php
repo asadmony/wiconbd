@@ -18,6 +18,7 @@ class CreateCategoriesTable extends Migration
             $table->string('catname', 255)->unique();
             $table->string('catlogo', 255)->nullable();
             $table->timestamps();
+            $table->collation = 'utf8_general_ci';
         });
     }
 

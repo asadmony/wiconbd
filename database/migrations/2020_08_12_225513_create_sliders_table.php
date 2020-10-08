@@ -18,10 +18,12 @@ class CreateSlidersTable extends Migration
             $table->string('title', 255)->nullable();
             $table->text('details')->nullable();
             $table->string('image')->nullable();
+            $table->integer('style')->nullable();
             $table->boolean('button')->nullable()->default(false);
             $table->string('buttonname', 255)->nullable();
             $table->string('buttonlink', 255)->nullable();
             $table->timestamps();
+            $table->collation = 'utf8_general_ci';
         });
     }
 

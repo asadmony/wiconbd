@@ -29,7 +29,6 @@ class NewProductRequest extends FormRequest
             'brand' => 'required',
             'category' => 'required',
             'price' => 'required|numeric',
-            'quantity' => 'required|numeric',
             ];
     }
     public function messages()
@@ -42,8 +41,6 @@ class NewProductRequest extends FormRequest
             'category.required' => 'Please select a category',
             'price.required' => 'Price is required',
             'price.numeric' => 'Price should be numeric',
-            'quantity.required' => 'Quantity is required',
-            'quantity.numeric' => 'Quantity should be numeric',
          ];
     }
 }

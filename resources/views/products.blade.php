@@ -21,7 +21,7 @@
                     <div class="prduct-banner">
                         @foreach ($banners as $banner)
                         <div class="prdct-img-1">
-                            <img src="{{ asset($banner->image) }}" alt="777">
+                            <img src="{{ asset($banner->image) }}" >
                         </div>
                         @endforeach
                     </div>

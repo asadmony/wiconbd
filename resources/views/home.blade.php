@@ -2,19 +2,21 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
-
+                @php
+                    $productcount = App\Product::count();
+                @endphp
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+                    Total Products: {{ $productcount }}
+                </div>
+                @php
+                    $categorycount = App\Category::count();
+                @endphp
+                <div class="card-body">
+                    Total Categories: {{ $categorycount }}
                 </div>
             </div>
         </div>
