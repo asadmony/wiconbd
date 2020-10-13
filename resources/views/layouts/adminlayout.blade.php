@@ -37,7 +37,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i> {{ Auth::user()->email }} </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        {{-- <a class="dropdown-item" href="{{ route('changepassword') }}">Change Password</a> --}}
+                        <a class="dropdown-item" href="{{ route('changepassword') }}">Change Password</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
@@ -106,6 +106,21 @@
                             <a class="nav-link " href="{{ route('admin.newbanner') }}" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
                                 Add Banner
+                            </a>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-sitemap"></i> Showrooms</div>
+                            <a class="nav-link " href="{{ route('admin.showrooms') }}" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-sitemap"></i></div>
+                                Showroom & Dealershop List
+                            </a>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-address-card"></i> About Us Content</div>
+                            <a class="nav-link " href="{{ route('admin.abouts') }}" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-address-card"></i></div>
+                                About Us Page
+                            </a>
+                            <div class="sb-sidenav-menu-heading"><i class="fas fa-info"></i> Website</div>
+                            <a class="nav-link " href="{{ route('admin.webinfos') }}" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-info"></i></div>
+                                Informations
                             </a>
                             <div class="sb-sidenav-menu-heading"><i class="fas fa-envelope-open-text"></i> Messages</div>
                             <a class="nav-link " href="{{ route('admin.messages') }}" >

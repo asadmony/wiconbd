@@ -496,6 +496,7 @@ class ComposerStaticInit45aab0690a65bf55b3c921527a8d82ac
     );
 
     public static $classMap = array (
+        'App\\About' => __DIR__ . '/../..' . '/app/About.php',
         'App\\Autocode' => __DIR__ . '/../..' . '/app/Autocode.php',
         'App\\Banner' => __DIR__ . '/../..' . '/app/Banner.php',
         'App\\Brand' => __DIR__ . '/../..' . '/app/Brand.php',
@@ -503,6 +504,8 @@ class ComposerStaticInit45aab0690a65bf55b3c921527a8d82ac
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\ContactMessage' => __DIR__ . '/../..' . '/app/ContactMessage.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\FeaturedProduct' => __DIR__ . '/../..' . '/app/FeaturedProduct.php',
+        'App\\Http\\Controllers\\AboutController' => __DIR__ . '/../..' . '/app/Http/Controllers/AboutController.php',
         'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
         'App\\Http\\Controllers\\ApiController' => __DIR__ . '/../..' . '/app/Http/Controllers/ApiController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -522,7 +525,10 @@ class ComposerStaticInit45aab0690a65bf55b3c921527a8d82ac
         'App\\Http\\Controllers\\ProductFeatureController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductFeatureController.php',
         'App\\Http\\Controllers\\ProductImageController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductImageController.php',
         'App\\Http\\Controllers\\ReviewController' => __DIR__ . '/../..' . '/app/Http/Controllers/ReviewController.php',
+        'App\\Http\\Controllers\\ShowroomController' => __DIR__ . '/../..' . '/app/Http/Controllers/ShowroomController.php',
         'App\\Http\\Controllers\\SliderController' => __DIR__ . '/../..' . '/app/Http/Controllers/SliderController.php',
+        'App\\Http\\Controllers\\SpecialProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/SpecialProductController.php',
+        'App\\Http\\Controllers\\WebInfoController' => __DIR__ . '/../..' . '/app/Http/Controllers/WebInfoController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -553,7 +559,9 @@ class ComposerStaticInit45aab0690a65bf55b3c921527a8d82ac
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Review' => __DIR__ . '/../..' . '/app/Review.php',
+        'App\\Showroom' => __DIR__ . '/../..' . '/app/Showroom.php',
         'App\\Slider' => __DIR__ . '/../..' . '/app/Slider.php',
+        'App\\SpecialProduct' => __DIR__ . '/../..' . '/app/SpecialProduct.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\WebInfo' => __DIR__ . '/../..' . '/app/WebInfo.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',

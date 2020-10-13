@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\About' => $baseDir . '/app/About.php',
     'App\\Autocode' => $baseDir . '/app/Autocode.php',
     'App\\Banner' => $baseDir . '/app/Banner.php',
     'App\\Brand' => $baseDir . '/app/Brand.php',
@@ -13,6 +14,8 @@ return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\ContactMessage' => $baseDir . '/app/ContactMessage.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\FeaturedProduct' => $baseDir . '/app/FeaturedProduct.php',
+    'App\\Http\\Controllers\\AboutController' => $baseDir . '/app/Http/Controllers/AboutController.php',
     'App\\Http\\Controllers\\AdminController' => $baseDir . '/app/Http/Controllers/AdminController.php',
     'App\\Http\\Controllers\\ApiController' => $baseDir . '/app/Http/Controllers/ApiController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -32,7 +35,10 @@ return array(
     'App\\Http\\Controllers\\ProductFeatureController' => $baseDir . '/app/Http/Controllers/ProductFeatureController.php',
     'App\\Http\\Controllers\\ProductImageController' => $baseDir . '/app/Http/Controllers/ProductImageController.php',
     'App\\Http\\Controllers\\ReviewController' => $baseDir . '/app/Http/Controllers/ReviewController.php',
+    'App\\Http\\Controllers\\ShowroomController' => $baseDir . '/app/Http/Controllers/ShowroomController.php',
     'App\\Http\\Controllers\\SliderController' => $baseDir . '/app/Http/Controllers/SliderController.php',
+    'App\\Http\\Controllers\\SpecialProductController' => $baseDir . '/app/Http/Controllers/SpecialProductController.php',
+    'App\\Http\\Controllers\\WebInfoController' => $baseDir . '/app/Http/Controllers/WebInfoController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -63,7 +69,9 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Review' => $baseDir . '/app/Review.php',
+    'App\\Showroom' => $baseDir . '/app/Showroom.php',
     'App\\Slider' => $baseDir . '/app/Slider.php',
+    'App\\SpecialProduct' => $baseDir . '/app/SpecialProduct.php',
     'App\\User' => $baseDir . '/app/User.php',
     'App\\WebInfo' => $baseDir . '/app/WebInfo.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',

@@ -88,5 +88,21 @@ Route::group(['middleware' => ['auth']], function () {
     // change password for admin
     Route::get('/admin/changepassword', 'AdminController@changepassword')->name('changepassword');
     Route::post('/admin/changepassword', 'AdminController@savepassword')->name('save.password');
+    // showroom routes for admin
+    Route::get('/admin/showrooms', 'ShowroomController@index')->name('admin.showrooms');
+    Route::get('/admin/newshowroom', 'ShowroomController@new')->name('admin.newshowroom');
+    Route::post('/admin/newshowroom', 'ShowroomController@add')->name('admin.newshowroom');
+    Route::get('/admin/showroom/{showroom}/edit', 'ShowroomController@edit')->name('admin.editshowroom');
+    Route::put('/admin/showroom/{showroom}/edit', 'ShowroomController@update')->name('admin.updateshowroom');
+    Route::delete('/admin/showroom/{showroom}/delete', 'ShowroomController@delete')->name('admin.deleteshowroom');
+    // webinfo routes for admin
+    Route::post('/admin/maintenance-mode', 'WebInfoController@maintenanceMode')->name('admin.maintenanceMode');
+    Route::get('/admin/webinfos', 'WebInfoController@index')->name('admin.webinfos');
+    Route::get('/admin/webinfo/{webinfo}/edit', 'WebInfoController@edit')->name('admin.editwebinfo');
+    Route::put('/admin/webinfo/{webinfo}/edit', 'WebInfoController@update')->name('admin.updatewebinfo');
+    // about us routes for admin
+    Route::get('/admin/about-us', 'AboutController@index')->name('admin.abouts');
+    Route::get('/admin/about-us/{about}/edit', 'AboutController@edit')->name('admin.editabout');
+    Route::put('/admin/about-us/{about}/edit', 'AboutController@update')->name('admin.updateabout');
 });
 
